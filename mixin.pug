@@ -1,0 +1,7 @@
+mixin project-card-mini(src, alt)
+    .project-card-mini
+            img(src=src alt=alt)&attributes(flex-img)
+
+mixin project-card
+    .project-card 
+        +project-card-mini

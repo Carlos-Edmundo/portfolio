@@ -1,0 +1,180 @@
+.portfolio {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+		background: $dark-color url("../img/waves.jpg") right no-repeat fixed;
+		background-size: cover;
+		text-align: center;
+		padding: 128px 0;
+		margin: 0;
+	}
+
+	@supports (-webkit-touch-callout: none) {
+		.portfolio {
+			// background: linear-gradient(180deg, $dark-color 2%, $secondary-color 40%, $primary-color 70%);
+			background: $dark-color url(../img/waves.jpg) center no-repeat;
+			background-size: cover;
+		}
+	}
+	
+	// @media (min-width: 768px) {
+	// 	@supports (-webkit-touch-callout: none) {
+	// 		.portfolio {
+	// 			background: url("../img/bg-portfolio.jpg") right no-repeat;
+	// 			background-size: cover;
+	// 		}
+	// 	}
+	// }
+	.portfolio h2 {
+		color: $primary-color;
+		padding-bottom: 100px;
+		min-width: 100%;
+	}
+	
+	.project-container {
+		display: flex;
+		flex-direction: row;
+		justify-content:start;
+		align-items: stretch;
+		gap: 24px;
+		padding: 0 16px;	
+		padding-bottom: 16px;
+		overflow: scroll;
+	}
+	
+	.project-card {
+		display: flex;
+		min-width: 90%;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 32px;
+		border-radius: 16px;
+		background: var(--light-60, rgba($light-color, 0.60));
+		box-shadow: 0px 4px 8px 0px rgba($dark-color, 0.35);
+		backdrop-filter: blur(2px);
+		padding-bottom: 32px;
+		&-mini{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 16px 16px 0px 0px;
+			background: $light-color;
+			& img{
+				width: 100%;
+				height: 100%;
+				border-radius: 16px 16px 0px 0px;
+				object-fit: cover;
+				// mix-blend-mode: luminosity;
+			}
+		}
+		&-content{
+			display: flex;
+			padding: 0px 8px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 0;
+			align-self: stretch;
+			&--description{
+				color: $dark-color;
+				text-align: center;
+				font-family: $font-2;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 600;
+				margin: 0;
+			}
+			&--title{
+				color: $primary-color;
+				text-align: center;	
+				font-family: $font-1;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				margin: 0;
+			}	
+		}
+		&--number {
+			color: $primary-color;
+			padding-bottom: 0 !important;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		&--logo {
+			max-width: 200px;
+			max-height: 100px;
+		}
+		&:hover{
+			.project-card-mini {
+				background-color: $light-color;
+				transition: all 0.3s ease-in;
+				& img{
+					mix-blend-mode: normal;
+					transition: all 0.3s ease-in;
+				}
+			}
+		}
+
+	}
+
+	.carrousel {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+    display: block;
+	}
+
+	
+	.portfolio .carrousel-wrapper {
+		max-width: 93%;
+	}
+
+
+
+	@media (min-width: 768px) {
+		.project-container {
+			flex-flow: row wrap;
+			justify-content:center;
+			gap: 24px;	
+		}
+
+		.project-card {
+			min-width: 30%;
+			max-width: 220px;
+		}
+		.carrousel{
+			overflow:auto;
+		}
+		
+		.portfolio .carrousel-wrapper {
+			max-width: 100%;
+			margin:  0 auto;
+		}
+		
+	}
+
+	@media (min-width: 996px){
+		.project-container{
+			gap: 40px;
+		}
+
+		.project-card {
+			min-width: 30%;
+			max-width: 300px;
+		}
+
+		.project-card-mini img{
+			mix-blend-mode: luminosity;
+		}
+		
+		.portfolio .carrousel-wrapper{
+			max-width: 1200px;
+		}
+	}

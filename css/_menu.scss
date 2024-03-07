@@ -1,0 +1,16 @@
+.menu-link {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding: 8px 16px;
+  }
+  .menu-link:hover {
+    color: $secondary-color;
+    transition: all 0.3s ease-in;
+  }
+  @media (min-width: 768px) {
+    .menu-link {
+      padding: 0 16px;
+    }
+  }

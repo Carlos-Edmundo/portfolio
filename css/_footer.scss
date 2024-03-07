@@ -1,0 +1,19 @@
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    gap: 16px;
+    & h2 {
+      color: $secondary-color;
+      margin-bottom: 0;
+    }
+    & .menu-contact{
+      margin: 16px;
+    }
+    & .p-s{
+      color: $light-color;
+    }
+  }
+  

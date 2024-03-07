@@ -1,0 +1,81 @@
+// .btn {
+//     width: 75%;
+//     height: 54px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 4px 16px;
+//     border-radius: 15px;
+//     background-color: $primary-color;
+//     border: none;
+//     box-shadow: none;
+//     font-family: "Source Sans Pro", sans-serif;
+//     font-size: 24px;
+//     color: $light-color;
+//     cursor: pointer;
+//     text-decoration: none;
+//     margin: 0 auto;
+//   }
+.btn{
+  display: inline-flex;
+  padding: 12px 16px;
+  height: 24px;
+  min-width: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  border: 1px solid $light-color;
+  background: $primary-color;
+  color: $light-color;
+  font-weight: 600;
+  margin: 24px 0;
+  &:hover {
+    background-color: $secondary-color;
+    transition: all 0.3s ease-in;
+  }
+  &-light {
+    background-color: transparent;
+    color: $secondary-color;
+    letter-spacing: 3px;
+  }
+  &-light:hover {
+    color: $light-color;
+  }
+  
+  &-round {
+    width: 56px;
+    height: 56px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &-round:hover {
+    background-color: $secondary-color;
+    transition: all 0.3s ease-in;
+  }
+  
+  &-md {
+    height: 32px;
+  }
+  &-lg {
+    height: 40px;
+  }
+}
+  
+  @media (min-width: 768px) {
+    .btn {
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: 998px) {
+    .btn {
+      max-width: 320px;
+    }
+  }

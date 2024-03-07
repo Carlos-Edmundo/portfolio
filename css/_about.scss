@@ -1,0 +1,40 @@
+
+.about {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 0px;
+		background: $medium-color url(../img/bg-about.jpg) left bottom no-repeat;
+		background-size: cover;
+		text-align: center;
+		padding: 128px 16px;
+		& h2{
+			color: $primary-color;
+		}
+		&-content{
+				display: flex;
+				flex-flow: column wrap;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.about-content{
+			flex-direction: row;
+			max-width: 600px;
+			justify-content: space-between;
+			align-items: center;
+			
+		}
+		.about-content-text, .about-content-img{
+			text-align: left;
+			max-width: 45%;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.about-content{
+			max-width: 900px;	
+		}
+		
+	}
