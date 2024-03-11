@@ -40,5 +40,10 @@
   #nav-back{
     display: flex;
     flex-flow: row wrap;
-    padding: 0 8px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    .btn{
+      height: auto !important;
+    }
   }

@@ -84,3 +84,8 @@ a {
   color: #e66111;
   text-decoration: none;
 }
+
+section{
+  display: flex;
+  flex-flow: column wrap;
+}
