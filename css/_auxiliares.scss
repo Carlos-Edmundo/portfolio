@@ -36,3 +36,9 @@
   .box-shadow-r15 {
     border-radius: 15px;
   }
+
+  #nav-back{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 8px;
+  }

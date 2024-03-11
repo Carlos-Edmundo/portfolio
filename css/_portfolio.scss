@@ -6,8 +6,9 @@
 		background: $dark-color url("../img/waves.jpg") right no-repeat fixed;
 		background-size: cover;
 		text-align: center;
-		padding: 128px 0;
+		padding-top: 128px;
 		margin: 0;
+		max-width: 100%;
 	}
 
 	@supports (-webkit-touch-callout: none) {
@@ -132,8 +133,8 @@
 	}
 
 	
-	.portfolio .carrousel-wrapper {
-		max-width: 93%;
+	.carrousel-wrapper {
+		max-width: 102%;
 	}
 
 

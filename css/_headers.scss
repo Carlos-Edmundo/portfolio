@@ -224,6 +224,15 @@ p-bold,
   align-items: center;
   margin-bottom: 0.5em;
 }
+.subtitle {
+  display: flex;
+  align-items: left;
+  color: $dark-color;
+  padding-bottom: 12px !important;
+  
+  min-width: 100%;
+  border-bottom: 1px $dark-color solid;
+}
 .title:after {
   content: "";
   border-bottom: 1px solid $primary-color;
